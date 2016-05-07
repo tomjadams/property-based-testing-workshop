@@ -46,7 +46,7 @@ You can run & check your solutions using `sbt`:
 $ ./bin/sbt
 ```
 
-This will start the `sbt` REPL, from where you can issue [commands](http://www.scala-sbt.org/0.12.4/docs/Getting-Started/Running.html#common-commands).
+This will start the `sbt` REPL, from where you can issue [commands](http://www.scala-sbt.org/0.13/docs/Running.html).
 
 * `test` - Runs all tests, use this to check your exercises;
 * `test-only workshop.exercises.scalatest.Exercise01` - Runs a single test;
