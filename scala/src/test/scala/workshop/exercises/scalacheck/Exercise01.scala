@@ -8,6 +8,13 @@ import org.scalatest.{FunSpec, Matchers}
 final class Exercise01 extends FunSpec with Matchers {
 
   /*
+   * We're going to use ScalaCheck for our property testing, it's documentation is here if you need it:
+   * https://www.scalacheck.org/documentation.html
+   *
+   */
+
+
+  /*
    *
    */
   object Addition {
