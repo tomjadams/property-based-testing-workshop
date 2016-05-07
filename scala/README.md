@@ -60,7 +60,7 @@ If you just wish to compile your test code, you can do so using:
 > compile
 ```
 
-Appending a `~` to the start of a command will run it continuously, for example to run tests contunuously:
+Appending a `~` to the start of any command will run it continuously, for example to run tests contunuously:
 
 ```
 > ~test
@@ -75,4 +75,4 @@ $ rm -rf ~/.sbt
 $ rm -rf ~/.ivy2
 ```
 
-Then, if you can uninstall Java by following the instructions here: https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#A1096903
+Then, if you want, you can uninstall Java by following the instructions here: https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#A1096903
