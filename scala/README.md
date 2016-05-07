@@ -25,8 +25,8 @@ Within each of these directories, there is a folder for:
 * `exercises` - these are the annotated exercises for you to complete;
 * `answers` - these are sample answers to the exercises.
 
-Within each of these, there are both regular style tests (using ScalaTest) in the `scalatest` folder, and property-based tests (using
-ScalaCheck) in the `scalacheck` folder.
+Within each of these, there are both regular style tests (using ScalaTest) in the `scalatest` folder, and property-based
+tests (using ScalaCheck) in the `scalacheck` folder.
 
 Start with the exercises in the following order:
 
@@ -35,8 +35,8 @@ Start with the exercises in the following order:
 
 Once you've started, read the instructions in the exercises, these will tell you where to go next.
 
-The answers for each exercise are in the corresponding answers class, for example the answers to `Exercise01` lives
-in the class `Answer01`
+The answers for each exercise are in the corresponding answers class, for example the answers to `Exercise01` live
+in the class `Answer01`.
 
 # Running the exercises
 
@@ -46,7 +46,7 @@ You can run & check your solutions using `sbt`:
 $ ./bin/sbt
 ```
 
-This will start the `sbt` REPL, from where you can issue commands.
+This will start the `sbt` REPL, from where you can issue [commands](http://www.scala-sbt.org/0.12.4/docs/Getting-Started/Running.html#common-commands).
 
 * `test` - Runs all tests, use this to check your exercises;
 * `test-only workshop.exercises.scalatest.Exercise01` - Runs a single test;
