@@ -8,7 +8,7 @@ used for property-based testing. You are welcome to use any editor you like.
 
 # Setup
 
-1. Install [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) from Oracle.
+1. Install [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) from Oracle. You will need a JDK, as of the time of writing this is "Java SE Development Kit 8u92".
 
 1. Run `sbt`:
 
@@ -60,7 +60,7 @@ If you just wish to compile your test code, you can do so using:
 > compile
 ```
 
-Appending a `~` to the start of a command will run it continuously, for example to run a contunuous test:
+Appending a `~` to the start of a command will run it continuously, for example to run tests contunuously:
 
 ```
 > ~test
@@ -68,9 +68,11 @@ Appending a `~` to the start of a command will run it continuously, for example 
 
 # Uninstall
 
-You can uninstall everything installed by this workshop by:
+You can uninstall everything you installed for this workshop by:
 
 ```
 $ rm -rf ~/.sbt
 $ rm -rf ~/.ivy2
 ```
+
+Then, if you can uninstall Java by following the instructions here: https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#A1096903
