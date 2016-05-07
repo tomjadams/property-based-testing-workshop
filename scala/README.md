@@ -53,7 +53,7 @@ This will start the `sbt` REPL, from where you can issue [commands](http://www.s
 * `test-only workshop.exercises.*` - Runs all tests in the `workshop.exercises` package;
 * `test:compile` - Compiles your test code.
 
-Appending a `~` to the start of any command will run it continuously, for example to run tests contunuously:
+Appending a `~` to the start of any command will run it continuously; for example to run tests continuously:
 
 ```
 > ~test
