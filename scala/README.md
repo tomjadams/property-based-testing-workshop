@@ -28,10 +28,13 @@ Within each of these directories, there is a folder for:
 Within each of these, there are both regular style tests (using ScalaTest) in the `scalatest` folder, and property-based
 tests (using ScalaCheck) in the `scalacheck` folder.
 
-Start with the exercises in the following order:
+Start with the first exercise in the `scalatest` package, then do the corresponding `scalacheck` version, before moving
+to the next exercise. So, your first four exercises will look like:
 
-* `src/test/scala/workshop/exercises/scalatest/Exercise01.scala`;
-* `src/test/scala/workshop/exercises/calacheck/Exercise01.scala`.
+* `scalatest.Exercise01`;
+* `scalacheck.Exercise01`.
+* `scalatest.Exercise02`;
+* `scalacheck.Exercise02`.
 
 Once you've started, read the instructions in the exercises, these will tell you where to go next.
 
