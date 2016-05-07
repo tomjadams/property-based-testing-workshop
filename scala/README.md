@@ -48,17 +48,10 @@ $ ./bin/sbt
 
 This will start the `sbt` REPL, from where you can issue commands.
 
-To check your exercises, run the `test` command:
-
-```
-> test
-```
-
-If you just wish to compile your test code, you can do so using:
-
-```
-> compile
-```
+* `test` - Runs all tests, use this to check your exercises;
+* `test-only workshop.exercises.scalatest.Exercise01` - Runs a single test;
+* `test-only workshop.exercises.*` - Runs all tests in the `workshop.exercises` package;
+* `test:compile` - Compiles your test code.
 
 Appending a `~` to the start of any command will run it continuously, for example to run tests contunuously:
 

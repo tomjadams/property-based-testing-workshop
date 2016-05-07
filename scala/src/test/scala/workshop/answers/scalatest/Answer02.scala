@@ -2,21 +2,12 @@ package workshop.answers.scalatest
 
 import org.scalatest.{FunSpec, Matchers}
 
-// =======
-// Exercise: Test drive a function that subtracts two integers from each other.
-// =======
 final class Answer02 extends FunSpec with Matchers {
 
-  /*
-   * Here is a simple function definition for subtracting two integers.
-   */
   object Subtraction {
     def subtract(a: Integer, b: Integer): Integer = a - b
   }
 
-  /*
-   * Add your specs here...
-   */
   describe("Subtracting two integers") {
     describe("subtracting 0 from a number") {
       it("returns the same number") {
