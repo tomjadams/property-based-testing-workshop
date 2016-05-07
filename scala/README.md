@@ -30,10 +30,13 @@ ScalaCheck) in the `scalacheck` folder.
 
 Start with the exercises in the following order:
 
-* `src/test/scala/exercises/scalatest/Exercise01.scala`;
-* `src/test/scala/exercises/calacheck/Exercise01.scala`.
+* `src/test/scala/workshop/exercises/scalatest/Exercise01.scala`;
+* `src/test/scala/workshop/exercises/calacheck/Exercise01.scala`.
 
 Once you've started, read the instructions in the exercises, these will tell you where to go next.
+
+The answers for each exercise are in the corresponding answers class, for example the answers to `Exercise01` lives
+in the class `Answer01`
 
 # Running the exercises
 
@@ -55,6 +58,12 @@ If you just wish to compile your test code, you can do so using:
 
 ```
 > compile
+```
+
+Appending a `~` to the start of a command will run it continuously, for example to run a contunuous test:
+
+```
+> ~test
 ```
 
 # Uninstall
