@@ -1,9 +1,13 @@
 # Property Based Testing Workshop
 
-A simple workshop for teaching property based testing.
+"Writing tests first forces you to think about the problem you're solving. Writing property-based tests forces you to think way harder." [@jessitron](https://twitter.com/jessitron/status/327480330900611072)
 
-Some great documentation & videos are available on the [ScalaCheck site](https://www.scalacheck.org/documentation.html).
+This is a simple workshop for teaching property based testing.
 
-# Scala
+For more information, some great documentation & videos are available on the [ScalaCheck site](https://www.scalacheck.org/documentation.html).
 
-The workshop in Scala is [here](./scala/README.md).
+This workshop is available for several languages:
+
+* [Scala](./scala/README.md);
+* Swift (coming soon).
+* Ruby -  see https://github.com/kputnam/propr
