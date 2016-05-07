@@ -4,7 +4,7 @@ This is a Scala version of the property based testing workshop.
 
 It uses [`sbt`](http://www.scala-sbt.org/0.13/docs/index.html) as the build tool & is fully self contained.
 [ScalaTest](http://www.scalatest.org) is used as the base testing framework, with [ScalaCheck](https://www.scalacheck.org)
-used as the property-based testing framework. You are welcome to use any editor you like.
+used for property-based testing. You are welcome to use any editor you like.
 
 # Setup
 
@@ -25,7 +25,7 @@ Within each of these directories, there is a folder for:
 * `exercises` - these are the annotated exercises for you to complete;
 * `answers` - these are sample answers to the exercises.
 
-Also, there are both regular style tests (using ScalaTest) in the `scalatest` folder, and property-based tests (using
+Within each of these, there are both regular style tests (using ScalaTest) in the `scalatest` folder, and property-based tests (using
 ScalaCheck) in the `scalacheck` folder.
 
 Start with the exercises in the following order:
