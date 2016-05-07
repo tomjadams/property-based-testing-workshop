@@ -8,7 +8,7 @@ import org.scalatest.{FunSpec, Matchers}
 final class Answer02 extends FunSpec with Matchers {
 
   /*
-   * Here is the subtraction class.
+   * Here is a simple function definition for subtracting two integers.
    */
   object Subtraction {
     def subtract(a: Integer, b: Integer): Integer = a - b
