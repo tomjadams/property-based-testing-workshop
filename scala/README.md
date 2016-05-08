@@ -1,6 +1,6 @@
 # Scala Property-Based Testing Workshop
 
-This is a Scala version of the property based testing workshop.
+This is a Scala version of the property-based testing workshop.
 
 It uses [`sbt`](http://www.scala-sbt.org/0.13/docs/index.html) as the build tool & is fully self contained.
 [ScalaTest](http://www.scalatest.org) is used as the base testing framework, with [ScalaCheck](https://www.scalacheck.org)
@@ -29,12 +29,22 @@ Within each of these, there are both regular style tests (using ScalaTest) in th
 tests (using ScalaCheck) in the `scalacheck` folder.
 
 Start with the first exercise in the `scalatest` package, then do the corresponding `scalacheck` version, before moving
-to the next exercise. So, your first four exercises will look like:
+to the next exercise. It is recommended to tackle the exercises in this order:
 
-* `scalatest.Exercise01`;
-* `scalacheck.Exercise01`;
-* `scalatest.Exercise02`;
-* `scalacheck.Exercise02`.
+* `scalatest.Exercise01` / `scalacheck.Exercise01` - test-drive a function that adds two integers;
+* `scalatest.Exercise02` / `scalacheck.Exercise02` - test-drive a function that subtracts two integers;
+* `scalatest.Exercise03` / `scalacheck.Exercise03` - test-drive functions to multiply & divide two integers;
+* `scalatest.Exercise04` / `scalacheck.Exercise04` - test-drive the identity function;
+* `scalatest.Exercise05` / `scalacheck.Exercise05` - test-drive a function that appends a string to another string;
+* `scalatest.Exercise06` / `scalacheck.Exercise06` - test-drive a function that prepends a string to another string;
+* `scalatest.Exercise07` / `scalacheck.Exercise07` - test-drive a function that reverses the elements in a list;
+* `scalatest.Exercise08` / `scalacheck.Exercise08` - test-drive a function that finds the smallest element in a list;
+* `scalatest.Exercise09` / `scalacheck.Exercise09` - test-drive a function that concatenates two lists to find
+  their combined length;
+* `scalatest.Exercise10` / `scalacheck.Exercise10` - test-drive functions that convert a string to a byte-array & back again;
+* `scalatest.Exercise11` / `scalacheck.Exercise11` - test-drive a function that formats an address as a string;
+* `scalatest.Exercise12` / `scalacheck.Exercise12` - test-drive a function that formats a price as a string;
+* `scalatest.Exercise13` / `scalacheck.Exercise13` - test-drive a JSON codec;
 
 Once you've started, read the instructions in the exercises, these will tell you where to go next.
 
