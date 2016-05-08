@@ -11,7 +11,7 @@ final class Exercise02 extends FunSpec with Matchers {
    * Here is a simple function definition for subtracting two integers.
    */
   object Subtraction {
-    def subtract(a: Integer, b: Integer): Integer = ???
+    def subtract(a: Int, b: Int): Int = ???
   }
 
   describe("Subtracting two integers") {

@@ -21,5 +21,5 @@ getting started with property based testing. In particular I found these useful:
 This workshop is available for several languages:
 
 * [Scala](./scala/README.md);
-* Swift (coming soon).
-* Ruby -  see https://github.com/kputnam/propr
+* Swift - see [SwiftCheck](https://github.com/typelift/SwiftCheck) & [Fox](https://github.com/jeffh/Fox);
+* Ruby -  see [Propr](https://github.com/kputnam/propr).

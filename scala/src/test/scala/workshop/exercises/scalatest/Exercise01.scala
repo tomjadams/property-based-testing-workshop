@@ -33,7 +33,7 @@ final class Exercise01 extends FunSpec with Matchers {
      * hasn't been implemented.
      *
      */
-    def add(a: Integer, b: Integer): Integer = ???
+    def add(a: Int, b: Int): Int = ???
   }
 
   /*
