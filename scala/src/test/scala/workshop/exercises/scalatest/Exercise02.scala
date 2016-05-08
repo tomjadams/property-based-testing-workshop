@@ -17,4 +17,8 @@ final class Exercise02 extends FunSpec with Matchers {
   describe("Subtracting two integers") {
     // Add your specs here...
   }
+
+  /*
+   * Great! Now go onto `scalacheck.Exercise03`.
+   */
 }

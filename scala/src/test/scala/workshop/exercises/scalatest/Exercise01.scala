@@ -55,4 +55,8 @@ final class Exercise01 extends FunSpec with Matchers {
   describe("Adding two integers") {
     // Add your specs here...
   }
+
+  /*
+   * Great! Now go onto `scalacheck.Exercise01`.
+   */
 }

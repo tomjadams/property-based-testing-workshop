@@ -6,7 +6,7 @@ It uses [`sbt`](http://www.scala-sbt.org/0.13/docs/index.html) as the build tool
 [ScalaTest](http://www.scalatest.org) is used as the base testing framework, with [ScalaCheck](https://www.scalacheck.org)
 used for property-based testing. You are welcome to use any editor you like.
 
-# Setup
+# Workshop setup
 
 1. Install [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) from Oracle. You will need a JDK, as of the time of writing this is "Java SE Development Kit 8u92".
 
@@ -32,7 +32,7 @@ Start with the first exercise in the `scalatest` package, then do the correspond
 to the next exercise. So, your first four exercises will look like:
 
 * `scalatest.Exercise01`;
-* `scalacheck.Exercise01`.
+* `scalacheck.Exercise01`;
 * `scalatest.Exercise02`;
 * `scalacheck.Exercise02`.
 
