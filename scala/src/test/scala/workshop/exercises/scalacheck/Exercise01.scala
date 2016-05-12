@@ -99,10 +99,12 @@ final class Exercise01 extends PropSpec with PropertyChecks with Matchers {
   /*
    * We can rewrite that in a couple of different ways.
    */
-  property("2. Adding two numbers & taking one away again is the first number") {
+  property("Adding two numbers & taking them both away is zero") {
+    // Rewrite the property by adding the two numbers, and then using the std - function to take them both away
     forAll((a: Int, b: Int) => (Addition.add(a, b) - a - b) should equal(0))
   }
-  property("3. Adding two numbers & taking one away again is the first number") {
+  property("Adding two numbers & taking their sum away is zero") {
+    // Rewrite the property by adding the two numbers, then taking away their sum, using our add function
     forAll((a: Int, b: Int) => (Addition.add(a, b) - Addition.add(a, b)) should equal(0))
   }
 
