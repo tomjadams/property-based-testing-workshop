@@ -13,12 +13,12 @@ final class Exercise01 extends PropSpec with PropertyChecks with Matchers {
    * https://www.scalacheck.org/documentation.html. If you get stuck, there are some good examples here:
    * https://github.com/oscarrenalias/scalacheck-examples/blob/master/scalacheck-integration-scalatest/src/test/scala/SimpleSpec.scala
    *
-   * When writing property-based tests, like in a lot of software development, it's often helpful to look for patterns,
-   * these make writing tests easier. For example, you can write a function that turns a String into UTF-8 encoded byte
-   * array, and then another from a byte array back into a String. This pattern is called symmetry, and you might call
-   * the test for these functions "symmetrical tests".
+   * When writing property-based tests, like in a lot of software development, it's often helpful to look for patterns
+   * that make writing tests easier. For example, you can write a function that turns a String into UTF-8 encoded byte
+   * array, and then another from a byte array back into a String. This is called symmetry, and you might call a test
+   * for these functions a "symmetrical test".
    *
-   * Assuming that we have our two functions as follows:
+   * So, assuming that we have our two functions as follows:
    *
    *   def toBytes(s: String, c: Charset): Array[Byte]
    *   def fromBytes(b: Array[Bytes], c: Charset): String
@@ -30,18 +30,24 @@ final class Exercise01 extends PropSpec with PropertyChecks with Matchers {
    *   val bytes = toBytes(str, charset)
    *   fromBytes(bytes, charset) == str
    *
-   * Sometimes, you may not have a pair of functions
-    *
-   * be able to come up with a symmetric
-    *
-   * you won't be able to come up with a symmetric test for a function
+   * Sometimes, you may not have a nice pair of functions, that are the opposite of each other. But you may have an
+   * equivalent or similar function that you can use to test the results. For example, for our `add` function, we have
+   * the system `+` function that we can use to test our result. This is often called a "test-oracle".
    *
-   * For this, we may be able
+   * Another nice pattern you can exploit, is that of invariants. For example suppose that you're testing a tax
+   * calculation function. Above a certain salary, all users will have the same tax rate. Here are some other examples:
    *
-   * model-based, test-oracle
+   * * Mapping the identity function across a list is equivalent to the list: `list.map(a => a) should equal(list)`;
+   * * Looking for an element in a list with a predicate that always returns true returns a list of length 1:
+   *   `list.filter(a => true).length should equal(1)`.
    *
-   * We'll be exploiting these patterns when writing property-based tests, to make our life simple by making it easier
-   * to come up with tests.
+   * The last pattern that we'll be using is idempotence. We can use this to test things like sorting a list twice is
+   * the same as sorting it once, or finding the unique elements in a list twice is the same as uniquing it once. You
+   * could also test that adding a user to the database twice is the same as adding it once, or migrating it to the same
+   * version twice is the same as migrating to that version once.
+   *
+   * We'll be exploiting these patterns when writing property-based tests throughout this workshop, making it easier to
+   * come up with tests.
    *
    * Here's our addition function from before, we're going to be driving out its implementation again using the tests
    * below.
