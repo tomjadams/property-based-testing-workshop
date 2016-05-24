@@ -1,5 +1,6 @@
 package workshop.exercises.scalacheck
 
+import org.scalacheck.Prop
 import org.scalatest.prop.PropertyChecks
 import org.scalatest.{Matchers, PropSpec}
 
@@ -89,6 +90,18 @@ final class Exercise01 extends PropSpec with PropertyChecks with Matchers {
    */
   property("Adding 0 to a number always returns the original number") {
     forAll((n: Int) => Addition.add(n, 0) should equal(n))
+  }
+
+  /*
+   * There are other ways that we can define our addition function, for example we can use the fact that addition and
+   * multiplication are related.
+   */
+  property("Addition is related to multiplication") {
+    // Write a property that ensures that adding a number to itself is the same as doubling the number.
+    forAll((n: Int) => Addition.add(n, n) should equal(2 * n))
+
+    // Write a property that ensures that adding a number to itself three times is the same as tripling the number.
+    forAll((n: Int) => Addition.add(Addition.add(n, n), n) should equal(3 * n))
   }
 
   /*
