@@ -15,6 +15,7 @@ getting started with property based testing. In particular I found these useful:
 
 * [How I learned to stop unit testing and love property-based testing](https://yow.eventer.com/yow-lambda-jam-2015-1305/practical-property-based-testing-by-charles-o-farrell-1884) - Charles O'Farrell, YOW! LambdaJam 2015 ([slides]( (http://blog.charleso.org/property-testing-preso/yowlj2015.html)));
 * [ScalaCheck User's Guide](https://github.com/rickynils/scalacheck/blob/master/doc/UserGuide.md)
+* [PropEr Testing](http://propertesting.com/index.html)
 
 # Implementation languages
 
